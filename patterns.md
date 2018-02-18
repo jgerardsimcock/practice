@@ -41,6 +41,15 @@ O(1) constant space time is a fixed number of variables
 
 
 
+Amortized Analysis
+==================
+
+Look at the cost of a single expensive operation, over the long-run cost of a large number of cheap operations
+
+
+
+
+
 Data Structures
 ---------------
 
@@ -55,6 +64,15 @@ Arrays
 * In python, lists are dynamic arrays. You do not need to specify the size of the array a priori. You can insert and delete elements at any index in the list. 
 * Strings are implemented as arrays of characters. 
 
+Dynamic Arrays
+==============
+
+* Array will grow if you try to make insertion and there is not enough space
+* Under the hood, all the elements of the array are copied to a new larger array
+* This operation, performs a copy operation on every element of the smaller array resulting in a linear runtime of O(n)
+* However, most insert operations are constant
+* We create frequent cheap constant time insertions at the cost of expensive infrequent linear time insertions.
+
 
 Hash tables
 ===========
@@ -65,6 +83,22 @@ Hash tables
 * Similar to an array if you think of array indexes as keys
 * Hash Collisions: two different inputs generate the same output.
 * Hash Rebalancing
+
+Linked Lists
+============
+
+* Only reference point to the linked-list is the head node
+* All subordinate values in the list link back to the head/root node
+* Constant time O(1) insertions and deletions
+* Lookups on linked-lists are take O(i) to go from head to ith value in list
+* Edits and lookups must move from head to ith item
+
+Doubly Linked Lists
+===================
+
+* Pointers to next and previous node of the list
+* Allow user to traverse the forwards and backwards
+
 
 
 
