@@ -1,0 +1,1 @@
+A collection of notes and algorithms on all the things I should know but never studied in CS
