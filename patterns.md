@@ -40,7 +40,6 @@ Space Complexity and Big-O
 O(1) constant space time is a fixed number of variables 
 
 
-
 Amortized Analysis
 ==================
 
@@ -99,6 +98,41 @@ Doubly Linked Lists
 * Pointers to next and previous node of the list
 * Allow user to traverse the forwards and backwards
 
+Call Stack
+----------
 
+What a program uses to keep track of what function is currently running and what to do with that functions return value.
+
+When you call a function, a new frame gets pushed onto the call stack, which then gets popped when the function returns. As functions call other functions, the stack gets taller. In recursive functions, the stack gets as tall as the number of times the function calls itself. 
+
+If the stack gets too big, a stack overflow error can occur. 
+
+Concurrency
+===========
+
+Concurrency models
+
+
+Problems and Subproblems
+========================
+
+Divide and conquer is an effective strategy for thinking about problem solving. 
+
+
+Recursion and Memoization
+-------------------------
+
+Given an input we can store results of a computation's output. This allows us to not rerun on a computation for a given input. This is useful in recursion, where we frequently will have common inputs into a computation. As we break problems into subproblems the possibility for recursion increases and the utility of memoization becomes more apparent for saving compute time. 
+
+In practice, this is simply using some datastructure to save outputs for given inputs and if we find ourselves using the same input again we can just lookup the data structure
+value instead of doing the computation.
+
+
+Dynamic Programming and subproblems
+-----------------------------------
+
+
+Bottom-up
+---------
 
 

@@ -36,6 +36,8 @@ def get_max_profit(stock_prices_array):
     #make a decision
     maxprofit = stock_prices_array[1] - minprice
 
+    #we need to start at 1 because its possible our index 1 value is lower than
+    #index 0 value and we want to reassign our min_price value
     for i in xrange(1, len(stock_prices_array)):
         current_price = stock_prices_array[i]
 
